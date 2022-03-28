@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(85, 8, 109);
+    color: white;
+}
+
+*{
+    display: flex;
+    justify-items: center;
+    flex-direction: column-reverse;
+    font-size: 19px;
+}
+form {
+  display: grid;
+  justify-content: center
+}
+
+#weekDays  {
+    margin: 10% 40% 30%;
+    display: grid;
+    
+}
+
+#firstModal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    background-color: rgb(85, 8, 109); /* Black w/ opacity */ 
+}
+
+#secondPage {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    background-color: rgb(85, 8, 109); /* Black w/ opacity */ 
+}
+
+.sleepHoursWantedValidation {
+  display: none;
+  width: 90%;
+  text-align: justify;
+}
+
+h4 {
+    display: grid;
+    justify-content: center;
+}
+
+#resultPage {
+    margin: 25px;
+}
+
+#nextPage {
+  margin: auto;
+}
+
+.hoursWanted {
+    display: grid;
+    justify-content: center;
+}
+
+#recomandations {
+  display: grid;
+  justify-content: center;
+  padding: 21%;
+}
+
+span {
+  font-size: 35px;
+}

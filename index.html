@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Sleep Debt Calculator.js" defer></script>
+</head>
+<body>
+    <div id="firstModal">
+      <h4>How many hours did you sleep each day?</h4>
+      <form name="Form">
+        <div id="weekDays">
+          <p>Monday</p>
+          <input type="number" id="monday"  name="monday">
+          <p>Tuesday</p>
+          <input type="number" id="tuesday" name="tuesday">
+          <p>Wenesday</p>
+          <input type="number" id="wenesday" name="wednesday">
+          <p>Thursday</p>
+          <input type="number" id="thursday" name="thursday">
+          <p>Friday</p>
+          <input type="number" id="friday" name="friday">
+          <p>Saturday</p>
+          <input type="number" id="saturaday" name="saturday">
+          <p>Sunday</p>
+          <input type="number" id="sunday" name="sunday">
+        </div>
+      </form>
+      <button id="nextPage" onclick="nextPage()" >Next</button>
+    </div>
+    <div id="secondPage">
+      <div class="hoursWanted">
+        <h4>How many hours you would like to sleep in total?</h4>
+        <form name="formHours">
+          <input type="number" id="hoursInputW" name="hoursInputW">
+        </form>
+        <p class="sleepHoursWantedValidation">
+          You should fill this Field with at least 49 hours minimum!!!<br>
+          We recomend you to get at least 49 hours of sleep/week! <br><br>
+          Average Sleep Needs by Age <br>
+          Newborn to 3 months old	14 - 17 hrs<br>
+          4 to 11 months old	12 - 15 hrs<br>
+          1 to 2 years old	11 - 14 hrs<br>
+          3 to 5 years old	10 - 13 hrs<br>
+          6 to 13 years old	9 - 11 hrs<br>
+          14 to 17 years old	8 - 10 hrs<br>
+          Young adults (18 to 25 years old)	7 - 9 hrs<br>
+          Adults (26 to 64 years old)	7 - 9 <br>
+          Older adults (65+)	7 - 8 hrs <br><br>
+          Source: National Sleep Foundation
+        </p>
+        <button id="resultPage" onclick="resultPage()">Result</button>
+      </div>
+    </div>
+    <div id="recomandations">
+      <h4>You slept in total this week: <span id="hoursSleept"></span></h4>
+      <h4 id="recommend">We recommend you to get more </h4>
+    </div>
+</body>
+</html>
